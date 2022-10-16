@@ -1,0 +1,48 @@
+{
+  "name": "jackdomleo7",
+  "version": "1.0.0",
+  "description": "A personal card for Jack Domleo (@jackdomleo7) right in the terminal!",
+  "main": "dist/index.js",
+  "bin": "./dist/index.js",
+  "scripts": {
+    "build": "rimraf dist && babel ./src -d ./dist --extensions .ts && cpy src/data.json dist --flat",
+    "start": "npm run build && node dist/index.js",
+    "prepack": "npm run build",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "./dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jackdomleo7/npx_business_card.git"
+  },
+  "keywords": [
+    "npx card",
+    "jack domleo"
+  ],
+  "author": {
+    "name": "Jack Domleo",
+    "url": "https://jackdomleo.dev"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/jackdomleo7/npx_business_card#readme",
+  "engines": {
+    "node": "16",
+    "npm": "8"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.19.3",
+    "@babel/node": "^7.19.1",
+    "@babel/preset-env": "^7.19.4",
+    "@babel/preset-typescript": "^7.18.6",
+    "@types/node": "^16.11.66",
+    "boxen": "^5.1.2",
+    "chalk": "^4.1.2",
+    "cpy-cli": "^4.2.0",
+    "rimraf": "^3.0.2",
+    "split-text": "^1.0.0",
+    "typescript": "^4.8.4"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "lib": [
+      "ES5"
+    ],
+    "outDir": "./",
+    "rootDir": "./",
+    "noEmit": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "types": [
+      "node",
+      "@types/node"
+    ]
+  },
+  "include": ["*.ts", "src/index.ts"]
+}

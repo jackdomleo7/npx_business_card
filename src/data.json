@@ -1,0 +1,17 @@
+{
+  "name": "Jack Domleo",
+  "occupation": {
+    "title": "Frontend Developer",
+    "company": "Ocean Finance"
+  },
+  "social": {
+    "twitter": "jackdomleo7",
+    "linkedin": "jackdomleo7",
+    "github": "jackdomleo7",
+    "codepen": "jackdomleo7"
+  },
+  "urls": {
+    "personal": "https://jackdomleo.dev"
+  },
+  "message": "TODO: Put some message here about me that makes me sound interesting."
+}
