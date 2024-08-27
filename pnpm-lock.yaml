@@ -19,19 +19,19 @@ importers:
         version: 1.0.0
     devDependencies:
       '@babel/cli':
-        specifier: ^7.22.9
+        specifier: ^7.24.8
         version: 7.24.8(@babel/core@7.25.2)
       '@babel/core':
-        specifier: ^7.22.9
+        specifier: ^7.25.2
         version: 7.25.2
       '@babel/node':
-        specifier: ^7.22.6
+        specifier: ^7.25.0
         version: 7.25.0(@babel/core@7.25.2)
       '@babel/preset-env':
-        specifier: ^7.22.9
+        specifier: ^7.25.4
         version: 7.25.4(@babel/core@7.25.2)
       '@babel/preset-typescript':
-        specifier: ^7.22.5
+        specifier: ^7.24.7
         version: 7.24.7(@babel/core@7.25.2)
       '@types/node':
         specifier: ^22.5.0
@@ -40,10 +40,10 @@ importers:
         specifier: ^5.0.0
         version: 5.0.0
       rimraf:
-        specifier: ^5.0.1
+        specifier: ^5.0.10
         version: 5.0.10
       typescript:
-        specifier: ^5.1.6
+        specifier: ^5.5.4
         version: 5.5.4
 
 packages:
