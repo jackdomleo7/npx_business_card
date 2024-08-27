@@ -27,10 +27,6 @@
   },
   "license": "MIT",
   "homepage": "https://github.com/jackdomleo7/npx_business_card#readme",
-  "engines": {
-    "node": "22",
-    "pnpm": "9"
-  },
   "dependencies": {
     "boxen": "^5.1.2",
     "chalk": "^4.1.2",
