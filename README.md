@@ -14,15 +14,15 @@ npx jackdomleo7
 
 Install dependencies
 ```cli
-npm i
+pnpm i
 ```
 
 Build the project for production
 ```cli
-npm run build
+pnpm run build
 ```
 
 Run the production files
 ```cli
-npm run start
+pnpm run start
 ```

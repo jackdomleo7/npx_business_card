@@ -13,11 +13,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Install Node
-        uses: actions/setup-node@v4
+      - name: Setup pnpm 9
+        uses: pnpm/action-setup@v4
         with:
-          node-version: '22.x'
+          version: 9
       - name: Clean install dependencies
-        run: npm ci
+        run: pnpm install --frozen-lockfile
       - name: Check project can build successfully
-        run: npm run build
+        run: pnpm run build

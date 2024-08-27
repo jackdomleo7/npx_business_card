@@ -6,9 +6,9 @@
   "bin": "./dist/index.js",
   "scripts": {
     "build": "rimraf dist && babel ./src -d ./dist --extensions .ts && cpy src/data.json dist --flat",
-    "start": "npm run build && node dist/index.js",
-    "prepack": "npm run build",
-    "prepublishOnly": "npm run build"
+    "start": "pnpm run build && node dist/index.js",
+    "prepack": "pnpm run build",
+    "prepublishOnly": "pnpm run build"
   },
   "files": [
     "./dist"
@@ -29,7 +29,7 @@
   "homepage": "https://github.com/jackdomleo7/npx_business_card#readme",
   "engines": {
     "node": "22",
-    "npm": "9"
+    "pnpm": "9"
   },
   "dependencies": {
     "boxen": "^5.1.2",
