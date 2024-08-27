@@ -12,10 +12,7 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
-    "types": [
-      "node",
-      "@types/node"
-    ]
+    "types": ["node"]
   },
   "include": ["*.ts", "src/index.ts"]
 }
