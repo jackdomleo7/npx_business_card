@@ -11,7 +11,6 @@ console.log(boxen([
   '',
   `${chalk.white(data.occupation.title)} at ${chalk.white(data.occupation.company)}`,
   '',
-  `Twitter: ${chalk.grey(`https://twitter.com/${data.social.twitter}`)}`,
   `LinkedIn: ${chalk.grey(`https://linkedin.com/in/${data.social.linkedin}`)}`,
   `GitHub: ${chalk.grey(`https://github.com/${data.social.github}`)}`,
   `CodePen: ${chalk.grey(`https://codepen.io/${data.social.codepen}`)}`,
