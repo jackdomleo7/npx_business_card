@@ -19,7 +19,6 @@ console.log(boxen([
 ].join('\n'), {
   margin: 1,
   padding: 1,
-  float: 'center',
   borderStyle: 'round',
   borderColor: '#f75c20'
 }))
