@@ -1,6 +1,6 @@
 {
   "name": "jackdomleo7",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A personal card for Jack Domleo (@jackdomleo7) right in the terminal!",
   "main": "dist/index.js",
   "bin": "./dist/index.js",
