@@ -9,7 +9,7 @@ console.log(boxen([
   chalk.hex('#e69e6b').bold(data.name),
   chalk.grey(data.urls.personal),
   '',
-  `${chalk.white(data.occupation.title)} at ${chalk.white(data.occupation.company)}`,
+  `${data.occupation.title} at ${data.occupation.company}`,
   '',
   `LinkedIn: ${chalk.grey(`https://linkedin.com/in/${data.social.linkedin}`)}`,
   `GitHub: ${chalk.grey(`https://github.com/${data.social.github}`)}`,
