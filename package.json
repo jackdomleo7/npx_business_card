@@ -1,12 +1,14 @@
 {
   "name": "jackdomleo7",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A personal card for Jack Domleo (@jackdomleo7) right in the terminal!",
-  "main": "dist/index.js",
+  "type": "module",
+  "main": "./dist/index.js",
   "bin": "./dist/index.js",
   "scripts": {
-    "build": "rimraf dist && babel ./src -d ./dist --extensions .ts && cpy src/data.json dist --flat",
-    "start": "pnpm run build && node dist/index.js",
+    "build": "tsc --noEmit && esbuild src/index.ts --outfile=dist/index.js --platform=node --minify",
+    "run": "tsx src/index.ts",
+    "lint": "oxlint src/",
     "prepack": "pnpm run build",
     "prepublishOnly": "pnpm run build"
   },
@@ -27,20 +29,12 @@
   },
   "license": "MIT",
   "homepage": "https://github.com/jackdomleo7/npx_business_card#readme",
-  "dependencies": {
-    "boxen": "^5.1.2",
-    "chalk": "^4.1.2",
-    "split-text": "^1.0.0"
-  },
   "devDependencies": {
-    "@babel/cli": "^7.24.8",
-    "@babel/core": "^7.25.2",
-    "@babel/node": "^7.25.0",
-    "@babel/preset-env": "^7.25.4",
-    "@babel/preset-typescript": "^7.24.7",
-    "@types/node": "^22.5.0",
-    "cpy-cli": "^5.0.0",
-    "rimraf": "^6.0.1",
-    "typescript": "^5.5.4"
+    "esbuild": "^0.27.3",
+    "oxlint": "^1.49.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild"]
   }
 }

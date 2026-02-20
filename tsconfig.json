@@ -1,18 +1,13 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "lib": [
-      "ES5"
-    ],
-    "outDir": "./",
-    "rootDir": "./",
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "rootDir": "./src",
     "noEmit": true,
     "strict": true,
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true,
-    "types": ["node"]
+    "forceConsistentCasingInFileNames": true
   },
-  "include": ["*.ts", "src/index.ts"]
+  "include": ["src"]
 }

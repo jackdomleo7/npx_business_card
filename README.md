@@ -24,5 +24,5 @@ pnpm run build
 
 Run the production files
 ```cli
-pnpm run start
+pnpm run run
 ```
